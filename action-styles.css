@@ -1,0 +1,143 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Container for centralized layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Action Section */
+.action {
+    padding: 4em 0;
+    margin-top: 3.5em;
+    background-color: #f5f9f9;
+}
+
+.action h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4caf50;
+    margin-bottom: 1em;
+}
+
+.action p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2em;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Action Steps */
+.action-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.action-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.action-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.action-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}
+
+.action-card:hover {
+    transform: translateY(-5px); /* Adds a slight lift effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .action-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .action h2 {
+        font-size: 2em;
+    }
+
+    .action p {
+        font-size: 1em;
+    }
+}

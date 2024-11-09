@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean and readable font */
+    line-height: 1.6; /* Increases readability with proper line spacing */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    color: #333; /* Sets a default text color */
+    background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+.container {
+    width: 100%; /* Sets a max width for content */
+    max-width: 1600px; /* Ensures content doesn’t stretch too wide */
+    margin: auto; /* Centers the container */
+    padding: 0 20px; /* Adds padding on the sides */
+
+}
+
+
+/* Basic Dropdown Styling */
+.header-nav .dropdown {
+    position: relative;
+}
+
+.header-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4caf50;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+}
+
+.header-nav .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header-nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-nav .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Header Styles */
+header {
+    background: #4caf50; /* Green background for the header */
+    color: white; /* White text color */
+    padding: 20px 0; /* Adds padding above and below */
+    display: flex; /* Use Flexbox to control header layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Centers text in the header */
+}
+
+header h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 2.5em; /* Increases header font size */
+    margin-bottom: 10px; /* Adds some space between the title and nav */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex; /* Using Flexbox to center the nav items */
+    justify-content: center; /* Centers nav items horizontally */
+    align-items: center; /* Aligns nav items vertically if needed */
+    width: 100%; /* Ensure the nav takes up full width */
+}
+
+nav ul {
+    list-style: none; /* Removes bullet points from list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Ensures that list items are displayed horizontally */
+}
+
+nav ul li {
+    margin: 0 10px; /* Adds spacing between items */
+}
+
+nav a {
+    color: white; /* Sets link color */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underlines links on hover */
+}
+
+
+/* Section Styles */
+section {
+    padding: 40px 0; /* Adds top and bottom padding for sections */
+    text-align: center; /* Centers text in sections */
+}
+
+h2 {
+    font-size: 2.5em; /* Sets size for section headers */
+    color: #4caf50; /* Green color for headers */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+p {
+    max-width: 800px; 
+    margin: 0 auto 20px; /* Centers paragraphs and adds bottom margin */
+    font-size: 1.2em; /* Increases font size for better readability */
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 0 auto; /* Centers the list */
+    max-width: 800px; /* Sets max width for the list */
+}
+
+/* ul li {
+    /* background: #e7f4e4; Light green background for list items */
+    /* padding: 10px; /* Adds padding inside list items */
+    /* margin: 10px 0; Adds margin above and below */
+    /* border-radius: 5px; Rounds the corners of list items */
+/* } */ */
+
+/* Call to Action Styles */
+.call-to-action {
+    background: #ffffff; /* White background for contrast */
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Adds padding inside the section */
+}
+
+/* Footer Styles */
+footer {
+    background: #4caf50; /* Green background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Centers text in footer */
+    padding: 20px 0; /* Adds padding above and below */
+    position: relative; /* Allows positioning of footer */
+    bottom: 0; /* Positions footer at the bottom */
+    width: 100%; /* Full width for footer */
+}
+
+footer p {
+    margin: 5px 0; /* Adds margin between footer paragraphs */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Margin above and below for spacing */
+    }
+
+    section {
+        padding: 20px 0; /* Reduces padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Smaller section header for mobile */
+    }
+
+    p {
+        font-size: 1em; /* Adjust paragraph font size for mobile */
+    }
+}
+
+
+/*  Botnaical */
+/* Botanical Gardens Section Styles */
+.botanical-gardens {
+    background: #fff; /* White background for this section */
+    padding: 40px 0;
+}
+
+.famous-gardens {
+    background: #f9f9f9; /* Light grey background */
+    padding: 40px 0;
+}
+
+.importance-gardens {
+    background: #ffffff;
+    padding: 40px 0;
+}
+
+.pollinator-friendly-garden {
+    background: #e7f4e4; /* Light green background */
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 1.2em;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* For smaller screens, adjust the layout */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    ul {
+        font-size: 1em;
+    }
+}
+
+
